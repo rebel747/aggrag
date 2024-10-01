@@ -37,6 +37,7 @@ Aggrag allows you to configure LLM experiments, and take them from prototype to 
   3. To start the server: get into the root aggrag directory and run: `python -m library.app serve`. Note, however:
       - You will need to create `.env` file in the root directory. Use the `.env-sample` file as a reference.
       - run `pip install -r requirements.txt`. It is recommended to create a new virtualenv in the root directory to avoid installing packages globally. Command to create a new virtual env: `python3 -m venv venv`
+  4. To run aggrag yor need to run python backend and react scripts in two differnent terminals
 
 For deployment, however, you can use a command same or similar to: `gunicorn --workers=4 --threads=4 -b 0.0.0.0:8000 --log-file=logs/app.log --log-level=info library.wsgi:app`
 
